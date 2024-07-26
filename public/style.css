@@ -1,0 +1,28 @@
+.tiles{
+    margin: 48px auto;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(4,4rem);
+    gap: 1rem;
+    box-sizing: border-box;
+}
+.tile{
+    height: 4rem;
+    background: #111;
+    border: 1px solid #4444;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+#timer{
+    font-size: 32px;
+}
+@media only screen and (min-width: 601px) {
+    .tile{
+      height: 100px;
+    }
+    .tiles{
+    grid-template-columns: repeat(4,100px);
+    }
+  }
+  
